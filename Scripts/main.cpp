@@ -1,8 +1,7 @@
 #include <iostream>
-#include "WindowTrackerAndShit/Headers/test.h"
+#include "WindowTrackerAndShit/Headers/GetWindowRelatedInfoWin32.h"
 
 int main()
 {
-    sayHello();
-    std::cout << add(5,9);
+    //Will implement logic later, my preboards are there :(
 }
