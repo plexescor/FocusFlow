@@ -29,7 +29,7 @@ No cloud. No accounts. No analytics. Just your raw productivity data stored **lo
 
 * **Active Window Logger** – Tracks which window is currently active with **Win32 API** precision.
 * **Switch Counter** – Counts task switches in real time to reveal how often your attention jumps.
-* **Ultra-Lightweight** – Runs silently, sipping minimal CPU (<2%) and memory (<30MB).
+* **Ultra-Lightweight** – Runs silently, sipping minimal CPU (<5%) and memory (<1MB, literally).
 * **Fully Offline** – 100% local logging. No cloud, no data leaks, no telemetry.
 
 That’s all for now. Everything else is upcoming. But don’t underestimate this: what’s implemented is **pure core power**, enough to give you a complete understanding of your focus patterns from the ground up.
@@ -37,7 +37,8 @@ That’s all for now. Everything else is upcoming. But don’t underestimate thi
 ---
 
 ## Upcoming Features 🌟
-
+* **Local Storage.** – Storage of data in disk (optimized I/O).
+* **Accurate AF** – Improved accuracy, precision.
 * **SDL GUI & Visualizations** – Beautiful charts, heatmaps, and interactive dashboards.
 * **PDF Report Export** – Generate offline reports of your focus patterns.
 * **Linux Support** – Cross-platform build via CMake.
@@ -62,7 +63,7 @@ That’s all for now. Everything else is upcoming. But don’t underestimate thi
 ## How It Works 🔍
 
 1. Launch **FocusFlow.exe**.
-2. It silently runs in the background.
+2. It silently runs in the background (Terminal).
 3. Using **Win32 API hooks**, it logs the active window and counts switches.
 4. Data is saved **locally**, in a lightweight format, ready for future visualizations or exports.
 5. Stay focused while FocusFlow quietly monitors your workflow.
