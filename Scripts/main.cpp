@@ -3,5 +3,11 @@
 
 int main()
 {
-    //Will implement logic later, my preboards are there :(
+    std::string choice;
+    std::cout << "Enter true or false: ";
+    std::cin>>choice;
+    if (choice == "true")
+    {
+        getCurrentWindow();
+    }
 }

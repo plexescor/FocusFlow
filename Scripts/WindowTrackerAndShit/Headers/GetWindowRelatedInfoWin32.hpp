@@ -1,3 +1,5 @@
 #pragma once
 
-//HI!
+//Get current Window declaration
+
+void getCurrentWindow();
