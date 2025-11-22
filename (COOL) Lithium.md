@@ -5,7 +5,7 @@
 
 Copyright (c) 2025 Plexescor
 
-Welcome, traveler. By opening **FocusFlow**, you have entered a sacred space. A place where focus meets precision, where code meets chaos, and where your digital life is laid bare for **scientific observation and creative mastery**.
+Welcome, traveler. By opening **ViraChrono**, you have entered a sacred space. A place where focus meets precision, where code meets chaos, and where your digital life is laid bare for **scientific observation and creative mastery**.
 
 This is not just software. This is a **movement**. A tool for the curious, the obsessed, the hacker-minded, and those who refuse to settle for mediocrity.
 
@@ -27,19 +27,19 @@ By touching this code, you swear to uphold the following creed:
 
 Even rebels have wisdom, and even the wildest hackers must heed these words:
 
-* FocusFlow is **fully offline**. Your data never leaves your machine. No cloud. No telemetry. No spies. Not a single keystroke escapes. Your privacy is sacred.
+* ViraChrono is **fully offline**. Your data never leaves your machine. No cloud. No telemetry. No spies. Not a single keystroke escapes. Your privacy is sacred.
 * This software comes **as-is**. If your computer melts, your cat walks across your keyboard, your coffee spills, or your energy drinks fail to fuel your brilliance… that is **entirely on you**.
-* FocusFlow is powerful, but it is **merely a mirror**. It will show you where your focus is spent, but it cannot make you productive. That part… is all you.
+* ViraChrono is powerful, but it is **merely a mirror**. It will show you where your focus is spent, but it cannot make you productive. That part… is all you.
 
 ---
 
-## The Philosophy of FocusFlow 💡
+## The Philosophy of ViraChrono 💡
 
-Why does FocusFlow exist?
+Why does ViraChrono exist?
 
 Because most productivity tools lie. They pretend to help you, but behind the flashy charts and cloud sync, they are **time thieves**.
 
-FocusFlow is different:
+ViraChrono is different:
 
 * **Raw.** No fluff, no bells, no whistles.
 * **Private.** All data stays on your machine. Always.
@@ -58,7 +58,7 @@ If you are reading this, you are likely a coder, a tinkerer, a performance freak
 * **SDL2 GUI foundation** – lightweight, fast, ready for visualizations.
 * **Minimalism** – nothing extra, nothing unnecessary, nothing that wastes CPU cycles or RAM.
 
-FocusFlow respects your intelligence, your privacy, and your time.
+ViraChrono respects your intelligence, your privacy, and your time.
 
 ---
 
@@ -77,7 +77,7 @@ But for now… the **core power is in your hands**. The silent tracking. The swi
 
 ## Closing Words 🛡️
 
-FocusFlow is more than code. It is a **manifesto**. A statement. A rebellion against the mediocre, the bloated, the data-hungry software that surrounds us.
+ViraChrono is more than code. It is a **manifesto**. A statement. A rebellion against the mediocre, the bloated, the data-hungry software that surrounds us.
 
 * Learn from it.
 * Break it.

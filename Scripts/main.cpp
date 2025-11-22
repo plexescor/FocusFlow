@@ -17,7 +17,7 @@ int main()
 
         if (currentWindow == temp)
         {
-            std::this_thread::sleep_for(std::chrono::seconds(1));
+            std::this_thread::sleep_for(std::chrono::milliseconds(100));
             continue;                          // no change, skip
         }
 
@@ -30,7 +30,7 @@ int main()
             std::cout << "Switches: " << windowSwitches << "\n";
         }
 
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 
     return 0;

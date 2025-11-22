@@ -2,9 +2,9 @@
 
 ---
 
-# FocusFlow ⚡
+# ViraChrono ⚡
 
-**FocusFlow** – the silent, hyper-efficient, fully offline app that watches your digital life so you can finally see where your focus really goes.
+**ViraChrono** – the silent, hyper-efficient, fully offline app that watches your digital life so you can finally see where your focus really goes.
 
 This isn’t a timer. This isn’t a Pomodoro clone. This is **pure observation**, a **digital microscope for your productivity**, designed for those who want to **understand themselves digitally without compromise**.
 
@@ -13,11 +13,11 @@ This isn’t a timer. This isn’t a Pomodoro clone. This is **pure observation*
 
 ---
 
-## Why FocusFlow Exists 💥
+## Why ViraChrono Exists 💥
 
 Let’s be honest: most “productivity tools” lie. They’re either bloated frameworks eating your RAM, trackers secretly sending your activity to a server, or they assume what you “should” do.
 
-**FocusFlow is different.**
+**ViraChrono is different.**
 
 It’s built in **pure C++**, runs quietly in the background, and **tracks exactly what you do** on your computer: which windows are active and how often you switch between them. That’s it. Simple. Efficient. Brutally honest.
 
@@ -62,10 +62,10 @@ That’s all for now. Everything else is upcoming. But don’t underestimate thi
 
 ## How It Works 🔍
 
-1. Launch **FocusFlow.exe**.
+1. Launch **ViraChrono.exe**.
 2. It silently runs in the background (Terminal).
 3. Using **Win32 API hooks**, it logs the active window and counts switches.
-4. Stay focused while FocusFlow quietly monitors your workflow.
+4. Stay focused while ViraChrono quietly monitors your workflow.
 
 
 Think of it as a **microscope for attention** – raw, precise, and unobtrusive.
@@ -79,7 +79,7 @@ Think of it as a **microscope for attention** – raw, precise, and unobtrusive.
 * **No telemetry** – Not a single event is sent anywhere.
 * **100% privacy-first** – Designed from the ground up to respect your focus and your data.
 
-FocusFlow is for those who **want control over their digital self**, without sacrificing privacy or performance.
+ViraChrono is for those who **want control over their digital self**, without sacrificing privacy or performance.
 
 ---
 
@@ -88,9 +88,9 @@ FocusFlow is for those who **want control over their digital self**, without sac
 1. Clone the repo.
 2. Configure the build using **CMake**.
 3. Compile with your preferred C++ compiler (MSVC recommended on Windows).
-4. Run **FocusFlow.exe**.
+4. Run **ViraChrono.exe**.
 
-That’s it. FocusFlow will start logging active windows and switches silently, letting you focus on **what you actually do**.
+That’s it. ViraChrono will start logging active windows and switches silently, letting you focus on **what you actually do**.
 
 > Stay tuned for future releases with visual dashboards, charts, PDFs, and Linux support – all offline and all performance-focused.
 
@@ -103,7 +103,7 @@ That’s it. FocusFlow will start logging active windows and switches silently, 
 * Designed for ultra-low resource usage without sacrificing functionality.
 * Current implementation is **fully functional** as a core focus tracker.
 
-FocusFlow is built for developers, power users, and anyone who wants a **truthful map of their digital habits**.
+ViraChrono is built for developers, power users, and anyone who wants a **truthful map of their digital habits**.
 
 ---
 
