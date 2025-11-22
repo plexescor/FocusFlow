@@ -23,7 +23,7 @@ int main()
 
         temp = currentWindow;
 
-        if (!currentWindow.empty())  
+        if (!currentWindow.empty() && currentWindow != "[No Foreground Window]")  
         {
             std::cout << currentWindow << "\n";        // print exe name
             windowSwitches++;
