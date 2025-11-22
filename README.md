@@ -29,7 +29,7 @@ No cloud. No accounts. No analytics. Just your raw productivity data stored **lo
 
 * **Active Window Logger** – Tracks which window is currently active with **Win32 API** precision.
 * **Switch Counter** – Counts task switches in real time to reveal how often your attention jumps.
-* **Ultra-Lightweight** – Runs silently, sipping minimal CPU (<5%) and memory (<1MB, literally).
+* **Ultra-Lightweight** – Runs silently, sipping minimal CPU (<1%, literally) and memory (<1MB, literally).
 * **Fully Offline** – 100% local logging. No cloud, no data leaks, no telemetry.
 
 That’s all for now. Everything else is upcoming. But don’t underestimate this: what’s implemented is **pure core power**, enough to give you a complete understanding of your focus patterns from the ground up.
