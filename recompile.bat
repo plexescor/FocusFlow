@@ -24,6 +24,6 @@ if exist build (
     echo ===========================
 
     cd Debug/
-    FocusFlow.exe
+    ViraChrono.exe
 
 )

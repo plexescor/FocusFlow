@@ -1,36 +1,41 @@
 #include <iostream>
-#include <chrono>
 #include <thread>
+#include <chrono>
 #include "WindowTrackerAndShit/Headers/GetCurrentWindow.hpp"
 
 int main()
 {
-    std::string temp = "";       // previous window
+    std::string prevWindow = "";
     std::string currentWindow;
-    int windowSwitches = -1;      // counter, STRICTLY START AT -1
+    int windowSwitches = -1; //KEEP IT AT -1, 0 CAUSES INCORRECT READING
 
     std::cout << "Tracking active windows. Press Ctrl+C to stop.\n";
 
     while (true)
     {
-        currentWindow = getCurrentWindow();     // get current exe name
+        currentWindow = getCurrentWindow();
 
-        if (currentWindow == temp)
+        // skip if no change or empty
+        if (currentWindow.empty() || currentWindow == prevWindow)
         {
-            std::this_thread::sleep_for(std::chrono::milliseconds(100));
-            continue;                          // no change, skip
+            std::this_thread::sleep_for(std::chrono::milliseconds(200));
+            continue;
         }
 
-        temp = currentWindow;
+        prevWindow = currentWindow;
 
-        if (!currentWindow.empty() && currentWindow != "[No Foreground Window]")  
+        // filter common system/UWP apps
+        if (currentWindow != "StartMenuExperienceHost" &&
+            currentWindow != "SearchApp" &&
+            currentWindow != "ApplicationFrameHost" &&
+            currentWindow != "explorer")
         {
-            std::cout << currentWindow << "\n";        // print exe name
             windowSwitches++;
+            std::cout << currentWindow << "\n";
             std::cout << "Switches: " << windowSwitches << "\n";
         }
 
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(200));
     }
 
     return 0;
