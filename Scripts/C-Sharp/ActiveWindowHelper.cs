@@ -25,7 +25,8 @@ class Program
     static void Main()
     {
         string output = "";
-        var task = Task.Run(() => GetActiveWindow());
+        var task = Task.Run(() => GetActiveWindow()); //Create a get ctive window task
+                                                      //Because if win32 API hangs, we may end current iteration
 
         if (task.Wait(1000)) // wait max 1 sec
         {
@@ -39,6 +40,7 @@ class Program
 
         Console.WriteLine(output);
         Console.Out.Flush(); // immediate flush for C++ pipe
+                             // prevents console freezes
     }
 
     static string GetActiveWindow()
@@ -52,6 +54,7 @@ class Program
         GetClassName(hwnd, className, className.Capacity);
         string cls = className.ToString();
 
+        //Skip system processed
         if (cls == "ApplicationFrameWindow" ||
             cls == "Windows.UI.Core.CoreWindow" ||
             cls == "ImmersiveShell")
@@ -71,17 +74,19 @@ class Program
         }
         catch { title = ""; }
 
-        // Process name safely
+        // Process name  (if possible)
         string procName = "";
         try
         {
             uint pid; // declare before
+            //Get proccess by pid
             GetWindowThreadProcessId(hwnd, out pid);
             var proc = Process.GetProcessById((int)pid);
             procName = proc.ProcessName;
         }
         catch { procName = ""; }
 
+        //Return with  "|" important so we can seperate in the c++ GetCurrentWindow.cpp while outputting
         return procName + "|" + title;
     }
 }

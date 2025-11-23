@@ -16,12 +16,13 @@ std::string getCurrentWindow()
         char buffer[256];
         std::string output;
 
-        while (fgets(buffer, sizeof(buffer), pipe) != nullptr)
+        while (fgets(buffer, sizeof(buffer), pipe) != nullptr) //context nullptr = \0 (end of string)
         {
             output += buffer;                                // append every line
         }
 
         _pclose(pipe);                                      // close safely
+        //I forgot to close the pipe, causing a ~500mb leak
 
         // Everything before the | character
         size_t pos = output.find('|');
